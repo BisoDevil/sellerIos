@@ -3,25 +3,37 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7923C744225CB36F00FEF04D /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7923C743225CB36F00FEF04D /* NetworkingClient.swift */; };
+		7923C747225CB7D100FEF04D /* ServerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7923C746225CB7D100FEF04D /* ServerModels.swift */; };
 		79C8CACB225B301700C15FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8CACA225B301700C15FAA /* AppDelegate.swift */; };
-		79C8CACD225B301700C15FAA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8CACC225B301700C15FAA /* ViewController.swift */; };
+		79C8CACD225B301700C15FAA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8CACC225B301700C15FAA /* LoginView.swift */; };
 		79C8CAD0225B301700C15FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C8CACE225B301700C15FAA /* Main.storyboard */; };
 		79C8CAD2225B301800C15FAA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C8CAD1225B301800C15FAA /* Assets.xcassets */; };
 		79C8CAD5225B301800C15FAA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C8CAD3225B301800C15FAA /* LaunchScreen.storyboard */; };
+		79C8CADF225B30B000C15FAA /* AppButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8CADE225B30B000C15FAA /* AppButton.swift */; };
+		79C8CAE1225B3AB900C15FAA /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79C8CAE0225B3AB900C15FAA /* Colors.xcassets */; };
+		A0D516B66094213A42E6B317 /* Pods_EG_Gate_Seller.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C2B6554B4AD0747A0BF1754 /* Pods_EG_Gate_Seller.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		33A1E693757B7771945749C5 /* Pods-EG-Gate Seller.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EG-Gate Seller.release.xcconfig"; path = "Target Support Files/Pods-EG-Gate Seller/Pods-EG-Gate Seller.release.xcconfig"; sourceTree = "<group>"; };
+		3C2B6554B4AD0747A0BF1754 /* Pods_EG_Gate_Seller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EG_Gate_Seller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7923C743225CB36F00FEF04D /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
+		7923C746225CB7D100FEF04D /* ServerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModels.swift; sourceTree = "<group>"; };
 		79C8CAC7225B301700C15FAA /* EG-Gate Seller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EG-Gate Seller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C8CACA225B301700C15FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		79C8CACC225B301700C15FAA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		79C8CACC225B301700C15FAA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		79C8CACF225B301700C15FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		79C8CAD1225B301800C15FAA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79C8CAD4225B301800C15FAA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		79C8CAD6225B301800C15FAA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		79C8CADE225B30B000C15FAA /* AppButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppButton.swift; sourceTree = "<group>"; };
+		79C8CAE0225B3AB900C15FAA /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		CC09C20E13138E6BDA34587E /* Pods-EG-Gate Seller.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EG-Gate Seller.debug.xcconfig"; path = "Target Support Files/Pods-EG-Gate Seller/Pods-EG-Gate Seller.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +41,52 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A0D516B66094213A42E6B317 /* Pods_EG_Gate_Seller.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44FA49FC50CFC9B2D6A8E8C1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3C2B6554B4AD0747A0BF1754 /* Pods_EG_Gate_Seller.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7923C741225CB31E00FEF04D /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				79C8CACC225B301700C15FAA /* LoginView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7923C742225CB34900FEF04D /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				7923C743225CB36F00FEF04D /* NetworkingClient.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		7923C745225CB55600FEF04D /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				7923C746225CB7D100FEF04D /* ServerModels.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		79C8CABE225B301700C15FAA = {
 			isa = PBXGroup;
 			children = (
 				79C8CAC9225B301700C15FAA /* EG-Gate Seller */,
 				79C8CAC8225B301700C15FAA /* Products */,
+				B0E145BD5F5558395AB1BBBC /* Pods */,
+				44FA49FC50CFC9B2D6A8E8C1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +101,35 @@
 		79C8CAC9225B301700C15FAA /* EG-Gate Seller */ = {
 			isa = PBXGroup;
 			children = (
+				7923C745225CB55600FEF04D /* Models */,
+				7923C742225CB34900FEF04D /* Controllers */,
+				7923C741225CB31E00FEF04D /* Views */,
+				79C8CADD225B307A00C15FAA /* StyleUI */,
 				79C8CACA225B301700C15FAA /* AppDelegate.swift */,
-				79C8CACC225B301700C15FAA /* ViewController.swift */,
 				79C8CACE225B301700C15FAA /* Main.storyboard */,
 				79C8CAD1225B301800C15FAA /* Assets.xcassets */,
 				79C8CAD3225B301800C15FAA /* LaunchScreen.storyboard */,
 				79C8CAD6225B301800C15FAA /* Info.plist */,
 			);
 			path = "EG-Gate Seller";
+			sourceTree = "<group>";
+		};
+		79C8CADD225B307A00C15FAA /* StyleUI */ = {
+			isa = PBXGroup;
+			children = (
+				79C8CADE225B30B000C15FAA /* AppButton.swift */,
+				79C8CAE0225B3AB900C15FAA /* Colors.xcassets */,
+			);
+			path = StyleUI;
+			sourceTree = "<group>";
+		};
+		B0E145BD5F5558395AB1BBBC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CC09C20E13138E6BDA34587E /* Pods-EG-Gate Seller.debug.xcconfig */,
+				33A1E693757B7771945749C5 /* Pods-EG-Gate Seller.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +139,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 79C8CAD9225B301900C15FAA /* Build configuration list for PBXNativeTarget "EG-Gate Seller" */;
 			buildPhases = (
+				19AF2161767D7E658937BAC3 /* [CP] Check Pods Manifest.lock */,
 				79C8CAC3225B301700C15FAA /* Sources */,
 				79C8CAC4225B301700C15FAA /* Frameworks */,
 				79C8CAC5225B301700C15FAA /* Resources */,
+				6D8871D96CC167546DC0CD7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +193,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				79C8CAD5225B301800C15FAA /* LaunchScreen.storyboard in Resources */,
+				79C8CAE1225B3AB900C15FAA /* Colors.xcassets in Resources */,
 				79C8CAD2225B301800C15FAA /* Assets.xcassets in Resources */,
 				79C8CAD0225B301700C15FAA /* Main.storyboard in Resources */,
 			);
@@ -130,12 +201,57 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		19AF2161767D7E658937BAC3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-EG-Gate Seller-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D8871D96CC167546DC0CD7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EG-Gate Seller/Pods-EG-Gate Seller-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-EG-Gate Seller/Pods-EG-Gate Seller-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-EG-Gate Seller/Pods-EG-Gate Seller-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		79C8CAC3225B301700C15FAA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				79C8CACD225B301700C15FAA /* ViewController.swift in Sources */,
+				7923C747225CB7D100FEF04D /* ServerModels.swift in Sources */,
+				7923C744225CB36F00FEF04D /* NetworkingClient.swift in Sources */,
+				79C8CADF225B30B000C15FAA /* AppButton.swift in Sources */,
+				79C8CACD225B301700C15FAA /* LoginView.swift in Sources */,
 				79C8CACB225B301700C15FAA /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +396,7 @@
 		};
 		79C8CADA225B301900C15FAA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CC09C20E13138E6BDA34587E /* Pods-EG-Gate Seller.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +415,7 @@
 		};
 		79C8CADB225B301900C15FAA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33A1E693757B7771945749C5 /* Pods-EG-Gate Seller.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
