@@ -7,11 +7,6 @@
 //
 
 import Foundation
-//"header":{
-//    "appUID":"SellerAndroid",
-//    "timestamp":1554032321876
-//},
-
 
 struct ReqUser:Codable {
     var email: String
@@ -50,5 +45,27 @@ struct FailedResponse:Codable {
 }
 struct UserResponse:Codable {
     
-    var user = "User()"
+    var user:User
+}
+struct User :Codable{
+    var id:Int
+    var code:String
+    var sellerContactPerson:String
+    var sellerBrand:String
+    var mobileNumber:String
+    var phoneNumber:String
+    var email:String
+    var password:String
+    var bankAccount:String
+    var productLevel:String
+    var categoryId:Int
+    var knowingFromId:Int
+    var memberShipId:Int
+    var addressBuildingNumber:String
+    var addressStreet:String
+    var addressAreaId:Int
+    var addressLandmark:String
+    var logo:String
+    var legalPapers:[String]
+    var certificates:[String]
 }

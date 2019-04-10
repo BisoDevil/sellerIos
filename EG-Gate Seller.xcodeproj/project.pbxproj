@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7923C744225CB36F00FEF04D /* NetworkingClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7923C743225CB36F00FEF04D /* NetworkingClient.swift */; };
 		7923C747225CB7D100FEF04D /* ServerModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7923C746225CB7D100FEF04D /* ServerModels.swift */; };
+		79B82448225DFC6F00909321 /* AppTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79B82447225DFC6F00909321 /* AppTextField.swift */; };
 		79C8CACB225B301700C15FAA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8CACA225B301700C15FAA /* AppDelegate.swift */; };
 		79C8CACD225B301700C15FAA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8CACC225B301700C15FAA /* LoginView.swift */; };
 		79C8CAD0225B301700C15FAA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C8CACE225B301700C15FAA /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 		3C2B6554B4AD0747A0BF1754 /* Pods_EG_Gate_Seller.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EG_Gate_Seller.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		7923C743225CB36F00FEF04D /* NetworkingClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingClient.swift; sourceTree = "<group>"; };
 		7923C746225CB7D100FEF04D /* ServerModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServerModels.swift; sourceTree = "<group>"; };
+		79B82447225DFC6F00909321 /* AppTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTextField.swift; sourceTree = "<group>"; };
 		79C8CAC7225B301700C15FAA /* EG-Gate Seller.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "EG-Gate Seller.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		79C8CACA225B301700C15FAA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		79C8CACC225B301700C15FAA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
@@ -118,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				79C8CADE225B30B000C15FAA /* AppButton.swift */,
+				79B82447225DFC6F00909321 /* AppTextField.swift */,
 				79C8CAE0225B3AB900C15FAA /* Colors.xcassets */,
 			);
 			path = StyleUI;
@@ -253,6 +256,7 @@
 				79C8CADF225B30B000C15FAA /* AppButton.swift in Sources */,
 				79C8CACD225B301700C15FAA /* LoginView.swift in Sources */,
 				79C8CACB225B301700C15FAA /* AppDelegate.swift in Sources */,
+				79B82448225DFC6F00909321 /* AppTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

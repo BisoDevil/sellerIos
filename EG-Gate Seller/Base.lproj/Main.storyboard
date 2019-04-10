@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -14,7 +15,7 @@
         <scene sceneID="5iW-hu-sYL">
             <objects>
                 <tableViewController id="9Fv-Ly-mvR" customClass="LoginView" customModule="EG_Gate_Seller" customModuleProvider="target" sceneMemberID="viewController">
-                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ChD-MQ-7BT">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" keyboardDismissMode="onDrag" dataMode="static" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="ChD-MQ-7BT">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -36,7 +37,7 @@
                                                     </constraints>
                                                 </imageView>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dkc-fR-igi" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                    <rect key="frame" x="50" y="337" width="314" height="40"/>
+                                                    <rect key="frame" x="50" y="337.5" width="314" height="39"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES"/>
@@ -49,7 +50,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Username"/>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                            <color key="value" name="MainColor"/>
+                                                            <color key="value" name="DarkColor"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                             <color key="value" name="MainColor"/>
@@ -66,7 +67,7 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="PsH-IC-9ld" customClass="SkyFloatingLabelTextField" customModule="SkyFloatingLabelTextField">
-                                                    <rect key="frame" x="50" y="397.5" width="314" height="40"/>
+                                                    <rect key="frame" x="50" y="397" width="314" height="39.5"/>
                                                     <nil key="textColor"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" enablesReturnKeyAutomatically="YES" secureTextEntry="YES"/>
@@ -79,7 +80,7 @@
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="string" keyPath="placeholder" value="Password"/>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="placeholderColor">
-                                                            <color key="value" name="MainColor"/>
+                                                            <color key="value" name="DarkColor"/>
                                                         </userDefinedRuntimeAttribute>
                                                         <userDefinedRuntimeAttribute type="color" keyPath="selectedLineColor">
                                                             <color key="value" name="MainColor"/>
@@ -96,13 +97,22 @@
                                                     </userDefinedRuntimeAttributes>
                                                 </textField>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lzb-a8-Ml6" customClass="AppButton" customModule="EG_Gate_Seller" customModuleProvider="target">
-                                                    <rect key="frame" x="50" y="463.5" width="314" height="39"/>
+                                                    <rect key="frame" x="50" y="462.5" width="314" height="39"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="39" id="hRw-FR-aZh"/>
                                                     </constraints>
                                                     <state key="normal" title="Login"/>
                                                     <connections>
                                                         <action selector="login:" destination="9Fv-Ly-mvR" eventType="touchUpInside" id="8BA-Jf-jcP"/>
+                                                    </connections>
+                                                </button>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZVY-i0-wLT">
+                                                    <rect key="frame" x="157.5" y="516" width="99" height="30"/>
+                                                    <state key="normal" title="First time here">
+                                                        <color key="titleColor" name="DarkColor"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="goToRegister:" destination="9Fv-Ly-mvR" eventType="touchUpInside" id="kgV-X5-v9Q"/>
                                                     </connections>
                                                 </button>
                                             </subviews>
@@ -119,6 +129,8 @@
                                                 <constraint firstItem="lzb-a8-Ml6" firstAttribute="top" secondItem="PsH-IC-9ld" secondAttribute="bottom" constant="26" id="PL8-O9-t5Z"/>
                                                 <constraint firstItem="lzb-a8-Ml6" firstAttribute="width" secondItem="PsH-IC-9ld" secondAttribute="width" id="Xan-60-jIA"/>
                                                 <constraint firstItem="Dkc-fR-igi" firstAttribute="centerX" secondItem="5oL-GA-g7m" secondAttribute="centerX" id="bvG-bc-2GJ"/>
+                                                <constraint firstItem="ZVY-i0-wLT" firstAttribute="centerX" secondItem="lzb-a8-Ml6" secondAttribute="centerX" id="kzV-ve-RNM"/>
+                                                <constraint firstItem="ZVY-i0-wLT" firstAttribute="top" secondItem="lzb-a8-Ml6" secondAttribute="bottom" constant="14.5" id="pli-qv-r03"/>
                                                 <constraint firstItem="PsH-IC-9ld" firstAttribute="centerX" secondItem="Dkc-fR-igi" secondAttribute="centerX" id="ukq-7I-Vnv"/>
                                                 <constraint firstItem="lzb-a8-Ml6" firstAttribute="centerX" secondItem="PsH-IC-9ld" secondAttribute="centerX" id="yb0-gm-SjV"/>
                                             </constraints>
@@ -135,15 +147,59 @@
                     <connections>
                         <outlet property="txtPassword" destination="PsH-IC-9ld" id="Abs-2i-ucu"/>
                         <outlet property="txtUsername" destination="Dkc-fR-igi" id="oRl-K6-eZM"/>
+                        <segue destination="3Ec-Ud-ntm" kind="show" identifier="segueRegister" id="Ajg-JO-aaW"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3fI-Gt-Cqb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-171.01449275362319" y="-91.304347826086968"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="lyz-AC-XfB">
+            <objects>
+                <viewController id="3Ec-Ud-ntm" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1Gz-U2-zVl">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" showsHorizontalScrollIndicator="NO" indicatorStyle="white" keyboardDismissMode="onDrag" translatesAutoresizingMaskIntoConstraints="NO" id="5gN-yI-DmQ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="901"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eQS-ao-AAT" customClass="AppTextField" customModule="EG_Gate_Seller" customModuleProvider="target">
+                                        <rect key="frame" x="16" y="104" width="398" height="39"/>
+                                        <nil key="textColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="eQS-ao-AAT" firstAttribute="trailing" secondItem="5gN-yI-DmQ" secondAttribute="trailingMargin" constant="8" id="iJe-RT-ejv"/>
+                                    <constraint firstItem="eQS-ao-AAT" firstAttribute="top" secondItem="5gN-yI-DmQ" secondAttribute="topMargin" constant="52" id="jnZ-Y4-zZd"/>
+                                    <constraint firstItem="eQS-ao-AAT" firstAttribute="leading" secondItem="5gN-yI-DmQ" secondAttribute="leadingMargin" constant="8" id="mUK-wQ-s2x"/>
+                                </constraints>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="tintColor" name="MainColor"/>
+                        <constraints>
+                            <constraint firstItem="5gN-yI-DmQ" firstAttribute="centerX" secondItem="GAK-So-0TN" secondAttribute="centerX" id="KIC-Bh-pYU"/>
+                            <constraint firstItem="5gN-yI-DmQ" firstAttribute="centerY" secondItem="GAK-So-0TN" secondAttribute="centerY" constant="-2.5" id="PhK-XK-gwQ"/>
+                            <constraint firstItem="5gN-yI-DmQ" firstAttribute="width" secondItem="1Gz-U2-zVl" secondAttribute="width" id="WNd-6t-Ojp"/>
+                            <constraint firstItem="5gN-yI-DmQ" firstAttribute="height" secondItem="1Gz-U2-zVl" secondAttribute="height" constant="5" id="ZrL-RG-MK6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="GAK-So-0TN"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PSV-GC-UOa" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-171.01449275362319" y="596.65178571428567"/>
+        </scene>
     </scenes>
     <resources>
         <image name="logo" width="956" height="437"/>
+        <namedColor name="DarkColor">
+            <color red="0.34509803921568627" green="0.34509803921568627" blue="0.35294117647058826" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <namedColor name="MainColor">
             <color red="0.6470588235294118" green="0.54509803921568623" blue="0.396078431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
